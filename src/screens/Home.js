@@ -1,12 +1,34 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import {
+    Text,
+    Container,
+    Content,
+    Header,
+    Left,
+    Body,
+    Right,
+    Title,
+} from 'native-base';
+import TopList from '../components/TopList';
 
 export default class Home extends Component {
     render(){
         return(
-            <View>
-                <Text> Heeeehe </Text>
-            </View>
+            <Container>
+                <Header>
+                    <Left/>
+                    <Body>
+                        <Title>
+                            CriptView
+                        </Title>
+                    </Body>
+                    <Right/>
+                </Header>
+                <Content>
+                    <TopList/>
+                </Content>
+                
+            </Container>
         );
     }
 }
